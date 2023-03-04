@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClient.Cache", "src\HttpClient.Cache\HttpClient.Cache.csproj", "{078F780B-17AA-4E58-A8D3-397033BAD23A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{FCC751F0-5E00-41CC-BB68-5870C901A75F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClient.Cache.Tests", "tests\HttpClient.Cache.Tests\HttpClient.Cache.Tests.csproj", "{AF0D7A5D-1242-44B1-9584-7D50FF6612DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{078F780B-17AA-4E58-A8D3-397033BAD23A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078F780B-17AA-4E58-A8D3-397033BAD23A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078F780B-17AA-4E58-A8D3-397033BAD23A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078F780B-17AA-4E58-A8D3-397033BAD23A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF0D7A5D-1242-44B1-9584-7D50FF6612DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF0D7A5D-1242-44B1-9584-7D50FF6612DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF0D7A5D-1242-44B1-9584-7D50FF6612DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF0D7A5D-1242-44B1-9584-7D50FF6612DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AF0D7A5D-1242-44B1-9584-7D50FF6612DA} = {FCC751F0-5E00-41CC-BB68-5870C901A75F}
+	EndGlobalSection
+EndGlobal
