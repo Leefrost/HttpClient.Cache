@@ -1,16 +1,17 @@
 ﻿using System.Net;
 using FluentAssertions;
+using FluentAssertions.Execution;
 using HttpClient.Cache.Stats;
 
 namespace HttpClient.Cache.Tests.Stats;
 
-public class StatsProviderTests
+public class DefaultStatsProviderTests
 {
     [Fact]
     public void GetReport_GetDefaultEmptyReportIfNoActions_ReportSuccessful()
     {
-        CacheStatsProvider provider = new("test-cache");
-        var expected = new StatsReport("test-cache");
+        DefaultCacheStatsProvider provider = new("test-cache");
+        var expected = new CacheStatsReport("test-cache");
 
         var stats = provider.GetReport();
 
@@ -20,8 +21,8 @@ public class StatsProviderTests
     [Fact]
     public void ReportHit_ReportCacheHitWith201_ReportSuccessful()
     {
-        CacheStatsProvider provider = new("test-cache");
-        var expected = new StatsReport("test-cache")
+        DefaultCacheStatsProvider provider = new("test-cache");
+        var expected = new CacheStatsReport("test-cache")
         {
             PerStatusCode = new Dictionary<HttpStatusCode, CacheStatsResult>
             {
@@ -38,8 +39,8 @@ public class StatsProviderTests
     [Fact]
     public void ReportHit_ReportCacheMissWith503_ReportSuccessful()
     {
-        CacheStatsProvider provider = new("test-cache");
-        var expected = new StatsReport("test-cache")
+        DefaultCacheStatsProvider provider = new("test-cache");
+        var expected = new CacheStatsReport("test-cache")
         {
             PerStatusCode = new Dictionary<HttpStatusCode, CacheStatsResult>
             {
@@ -51,5 +52,24 @@ public class StatsProviderTests
         var stats = provider.GetReport();
 
         stats.Should().BeEquivalentTo(expected, ignore => ignore.Excluding(x => x.CreatedAt));
+    }
+    
+    [Fact]
+    public void GetReport_ReportOneMissAndHit_ReportTotalIsSuccessful()
+    {
+        DefaultCacheStatsProvider provider = new("test-cache");
+
+        provider.ReportHit(HttpStatusCode.Created);
+        provider.ReportMiss(HttpStatusCode.Created);
+        var stats = provider.GetReport();
+
+        using (new AssertionScope())
+        {
+            stats.Total.CacheMiss.Should().Be(1L);
+            stats.Total.CacheHit.Should().Be(1L);
+            stats.Total.TotalRequests.Should().Be(2L);
+            stats.Total.TotalHitsPercent.Should().Be(0.5);
+            stats.Total.TotalMissPercent.Should().Be(0.5);
+        }
     }
 }

@@ -2,9 +2,9 @@
 
 namespace HttpClient.Cache.Stats;
 
-public class StatsReport
+public class CacheStatsReport
 {
-    public StatsReport(string cacheType)
+    public CacheStatsReport(string cacheType)
     {
         CacheType = cacheType;
         PerStatusCode = new Dictionary<HttpStatusCode, CacheStatsResult>();

@@ -3,12 +3,12 @@ using System.Net;
 
 namespace HttpClient.Cache.Stats;
 
-public class CacheStatsProvider : ICacheStatsProvider
+public class DefaultCacheStatsProvider : ICacheStatsProvider
 {
     private readonly string _cacheType;
     private readonly ConcurrentDictionary<HttpStatusCode, CacheStatsResult> _values;
 
-    public CacheStatsProvider(string cacheType)
+    public DefaultCacheStatsProvider(string cacheType)
     {
         _cacheType = cacheType;
         _values = new ConcurrentDictionary<HttpStatusCode, CacheStatsResult>();
@@ -32,9 +32,9 @@ public class CacheStatsProvider : ICacheStatsProvider
         });
     }
 
-    public StatsReport GetReport()
+    public CacheStatsReport GetReport()
     {
-        return new StatsReport(_cacheType)
+        return new CacheStatsReport(_cacheType)
         {
             PerStatusCode = new Dictionary<HttpStatusCode, CacheStatsResult>(_values)
         };

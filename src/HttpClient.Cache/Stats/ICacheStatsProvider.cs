@@ -8,5 +8,5 @@ public interface ICacheStatsProvider
 
     void ReportMiss(HttpStatusCode code);
 
-    StatsReport GetReport();
+    CacheStatsReport GetReport();
 }
