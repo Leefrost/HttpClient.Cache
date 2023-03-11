@@ -30,4 +30,8 @@
       <ProjectReference Include="..\..\src\HttpClient.Cache\HttpClient.Cache.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="InMemory" />
+    </ItemGroup>
+
 </Project>
