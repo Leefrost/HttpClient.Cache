@@ -33,7 +33,7 @@ public class MemoryCache : IMemoryCache
         _setEntry = SetEntry;
         _entryExpirationNotification = EntryExpired;
 
-        _clock = options.Clock;
+        _clock = options.Clock ?? new SystemClock();
         _expirationScanFrequency = options.ExpirationScanFrequency;
         _lastExpirationScan = _clock.UtcNow;
     }
@@ -140,13 +140,12 @@ public class MemoryCache : IMemoryCache
             return;
         }
 
-        DateTimeOffset currentTime = _clock.UtcNow;
-        DateTimeOffset? entryAbsoluteExpiration = new();
+        var currentTime = _clock.UtcNow;
+        var entryAbsoluteExpiration = new DateTimeOffset?();
         
         if (entry.AbsoluteExpirationRelativeToNow.HasValue)
         {
-            TimeSpan? expirationRelativeToNow = entry.AbsoluteExpirationRelativeToNow;
-            entryAbsoluteExpiration = currentTime + expirationRelativeToNow;
+            entryAbsoluteExpiration = currentTime + entry.AbsoluteExpirationRelativeToNow;
         }
         else if (entry.AbsoluteExpiration.HasValue)
         {

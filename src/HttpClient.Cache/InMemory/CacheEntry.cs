@@ -20,7 +20,9 @@ internal class CacheEntry : ICacheEntry
     private bool _isDisposed;
     private bool _isExpired;
 
-    internal CacheEntry(object key, Action<CacheEntry> notifyCacheEntryDisposed,
+    internal CacheEntry(
+        object key, 
+        Action<CacheEntry> notifyCacheEntryDisposed,
         Action<CacheEntry> notifyCacheOfExpiration)
     {
         Key = key ?? throw new ArgumentNullException(nameof(key));
@@ -100,7 +102,7 @@ internal class CacheEntry : ICacheEntry
     
     internal bool IsExpired(DateTimeOffset currentTime)
     {
-        if (_isExpired && !IsExpiredNow(currentTime))
+        if (!_isExpired && !IsExpiredNow(currentTime))
         {
             return IsAnyExpirationTokenExpired();
         }

@@ -8,13 +8,25 @@ public class InMemoryCacheHandler : DelegatingHandler
 {
     private readonly IMemoryCache _responseCache;
     private readonly IDictionary<HttpStatusCode, TimeSpan> _cacheExpirationPerHttpResponseCode;
+
+    public InMemoryCacheHandler(
+        HttpMessageHandler? innerHandler,
+        IDictionary<HttpStatusCode, TimeSpan>? cacheExpirationPerHttpResponseCode = null,
+        ICacheStatsProvider? statsProvider = null,
+        ICacheKeysProvider? cacheKeysProvider = null)
+            :this(innerHandler, 
+                cacheExpirationPerHttpResponseCode, 
+                statsProvider, 
+                new MemoryCache(new MemoryCacheOptions()), 
+                cacheKeysProvider)
+    { }
     
     internal InMemoryCacheHandler(
         HttpMessageHandler? innerHandler,
         IDictionary<HttpStatusCode, TimeSpan>? cacheExpirationPerHttpResponseCode,
         ICacheStatsProvider? statsProvider,
         IMemoryCache? responseCache,
-        ICacheKeysProvider cacheKeysProvider)
+        ICacheKeysProvider? cacheKeysProvider)
         : base(innerHandler ?? new HttpClientHandler())
     {
         StatsProvider = statsProvider ?? new DefaultCacheStatsProvider(nameof(InMemoryCacheHandler));

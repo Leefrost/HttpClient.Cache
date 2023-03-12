@@ -4,7 +4,7 @@ namespace HttpClient.Cache.InMemory;
 
 public static class InMemoryCacheExtensions
 {
-    public static Task<CacheData> TryGetAsync(this IMemoryCache cache, string key)
+    public static Task<CacheData?> TryGetAsync(this IMemoryCache cache, string key)
     {
         try
         {
@@ -32,6 +32,7 @@ public static class InMemoryCacheExtensions
             entry.AbsoluteExpirationRelativeToNow = absoluteExpirationRelativeToNow;
             entry.Value = value.Serialize();
             entry.Dispose();
+            
             return Task.FromResult(true);
         }
         catch (Exception ex)
