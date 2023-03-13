@@ -18,11 +18,12 @@ public static class HttpResponseMessageExtensions
 
     public static HttpResponseMessage PrepareCacheEntry(this HttpRequestMessage request, CacheData cacheData)
     {
-        //TODO: headers
         var response = cacheData.Response;
         response.Content = new ByteArrayContent(cacheData.Data);
         response.RequestMessage = request;
 
+        //TODO: headers are important. Will be added later;
+        
         return response;
     }
 }

@@ -11,7 +11,7 @@ public static class InMemoryCacheExtensions
             if (cache.TryGetValue(key, out var data))
             {
                 var binaryData = (byte[])data;
-                return Task.FromResult(binaryData.Deserialize());
+                return Task.FromResult(binaryData.Unpack());
             }
 
             return Task.FromResult(default(CacheData));
@@ -28,11 +28,11 @@ public static class InMemoryCacheExtensions
     {
         try
         {
-            var entry = cache.CreateEntry(key);
-            entry.AbsoluteExpirationRelativeToNow = absoluteExpirationRelativeToNow;
-            entry.Value = value.Serialize();
-            entry.Dispose();
-            
+            using (var entry = cache.CreateEntry(key))
+            {
+                entry.AbsoluteExpirationRelativeToNow = absoluteExpirationRelativeToNow;
+                entry.Value = value.Pack();
+            }
             return Task.FromResult(true);
         }
         catch (Exception ex)
