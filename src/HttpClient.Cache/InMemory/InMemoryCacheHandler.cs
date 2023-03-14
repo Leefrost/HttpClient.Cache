@@ -62,14 +62,13 @@ public class InMemoryCacheHandler : DelegatingHandler
         var key = CacheKeysProvider.GetKey(request);
         if (request.Method == HttpMethod.Get || request.Method == HttpMethod.Head)
         {
-            var cachedData = await _responseCache.TryGetAsync(key);
-            if (cachedData != null)
+            if (await _responseCache.TryGetAsync(key, out var cachedData) && cachedData != default)
             {
                 var cachedResponse = request.PrepareCacheEntry(cachedData);
-                StatsProvider.ReportHit((cachedResponse.StatusCode));
+                StatsProvider.ReportHit(cachedResponse.StatusCode);
 
                 return cachedResponse;
-            }
+            };
         }
 
         var response = await base.SendAsync(request, cancellationToken);

@@ -36,7 +36,7 @@ internal class CacheEntry : ICacheEntry
     public object Key { get; }
     public object Value { get; set; }
     
-    public CacheItemPriority Priority { get; set; } = CacheItemPriority.Normal;
+    public CacheEntryPriority Priority { get; set; } = CacheEntryPriority.Normal;
 
     public DateTimeOffset? AbsoluteExpiration
     {
