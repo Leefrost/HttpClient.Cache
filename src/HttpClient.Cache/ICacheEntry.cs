@@ -14,5 +14,5 @@ public interface ICacheEntry: IDisposable
 
     IList<PostEvictionCallbackRegistration> PostEvictionCallbacks { get; }
     
-    CacheItemPriority Priority { get; set; }
+    CacheEntryPriority Priority { get; set; }
 }

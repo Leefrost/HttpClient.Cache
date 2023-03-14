@@ -1,6 +1,6 @@
 ﻿namespace HttpClient.Cache;
 
-public enum CacheItemPriority
+public enum CacheEntryPriority
 {
     Low,
     Normal,
