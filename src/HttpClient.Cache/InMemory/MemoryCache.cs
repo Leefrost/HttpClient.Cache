@@ -3,7 +3,7 @@ using HttpClient.Cache.InMemory.Clock;
 
 namespace HttpClient.Cache.InMemory;
 
-public class MemoryCache : IMemoryCache
+public sealed class MemoryCache : IMemoryCache
 {
     private readonly ISystemClock _clock;
     private readonly ConcurrentDictionary<object, CacheEntry> _cacheEntries;
@@ -42,6 +42,8 @@ public class MemoryCache : IMemoryCache
     {
         Dispose(false);
     }
+    
+    public int Count => _cacheEntries.Count;
 
     public ICacheEntry CreateEntry(object key)
     {
@@ -247,7 +249,7 @@ public class MemoryCache : IMemoryCache
         }
     }
 
-    protected virtual void Dispose(bool disposing)
+    private void Dispose(bool disposing)
     {
         if (_isDisposed)
         {

@@ -8,7 +8,6 @@ namespace HttpClient.Cache.Tests.InMemory;
 
 public class MemoryCacheExtensionsTests
 {
-    
     [Fact]
     public async Task  TryGetAsync_GetCacheItemFromMemoryCacheOut_ReturnTrue()
     {
@@ -73,6 +72,4 @@ public class MemoryCacheExtensionsTests
 
         result.Should().BeTrue();
     }
-    
-    
 }
