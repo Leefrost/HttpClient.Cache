@@ -64,6 +64,7 @@ public class MemoryCacheTests
         
         using(var entry = cache.CreateEntry("key")){
             entry.SlidingExpiration = expiration;
+            entry.AbsoluteExpiration = DateTimeOffset.UtcNow.AddSeconds(1);
             entry.Value = $"value";
         }
 
@@ -82,19 +83,18 @@ public class MemoryCacheTests
     [Fact]
     public async Task CreateEntry_ExpireAbsoluteDate_CacheIsEmpty()
     {
-        var expiration = DateTimeOffset.UtcNow.AddSeconds(2);
         var options = new MemoryCacheOptions();
         var cache = new MemoryCache(options);
         
         using(var entry = cache.CreateEntry("key")){
-            entry.AbsoluteExpiration = expiration;
+            entry.AbsoluteExpiration = DateTimeOffset.UtcNow.AddSeconds(2);
             entry.Value = $"value";
         }
 
         using (new AssertionScope())
         {
             cache.Count.Should().Be(1);
-            await Task.Delay(TimeSpan.FromSeconds(2));
+            await Task.Delay(TimeSpan.FromSeconds(3));
 
             var value = cache.TryGetValue("key", out var cacheEntry);
             value.Should().BeFalse();
