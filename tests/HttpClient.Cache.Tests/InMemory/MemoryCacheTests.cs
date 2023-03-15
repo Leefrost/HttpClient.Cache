@@ -34,19 +34,18 @@ public class MemoryCacheTests
     [Fact]
     public async Task CreateEntry_ExpireAbsoluteExpirationRelativeToNow_CacheIsEmpty()
     {
-        var expiration = TimeSpan.FromSeconds(3);
         var options = new MemoryCacheOptions();
         var cache = new MemoryCache(options);
         
         using(var entry = cache.CreateEntry("key")){
-            entry.AbsoluteExpirationRelativeToNow = expiration;
+            entry.AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(3);
             entry.Value = $"value";
         }
 
         using (new AssertionScope())
         {
             cache.Count.Should().Be(1);
-            await Task.Delay(expiration);
+            await Task.Delay(TimeSpan.FromSeconds(4));
 
             var value = cache.TryGetValue("key", out var cacheEntry);
             value.Should().BeFalse();

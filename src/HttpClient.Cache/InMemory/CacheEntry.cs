@@ -124,13 +124,13 @@ internal class CacheEntry : ICacheEntry
 
         var accessedOffset = currentTime - LastAccessed;
         var expiration = _slidingExpiration;
-        if ((expiration.HasValue ? accessedOffset >= expiration.GetValueOrDefault() ? 1 : 0 : 0) == 0)
+        if ((expiration.HasValue ? (accessedOffset >= expiration.GetValueOrDefault() ? 1 : 0) : 0) != 0)
         {
-            return false;
+            ExpireEntryByReason(EvictionReason.Expired);
+            return true;
         }
-
-        ExpireEntryByReason(EvictionReason.Expired);
-        return true;
+        
+        return false;
     }
     
     private bool IsAnyExpirationTokenExpired()
