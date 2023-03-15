@@ -33,7 +33,7 @@ public class MemoryCacheTests
     [Fact]
     public async Task CreateEntry_ExpireAbsoluteExpirationRelativeToNow_CacheIsEmpty()
     {
-        var expiration = TimeSpan.FromSeconds(2);
+        var expiration = TimeSpan.FromSeconds(3);
         var options = new MemoryCacheOptions();
         var cache = new MemoryCache(options);
         
