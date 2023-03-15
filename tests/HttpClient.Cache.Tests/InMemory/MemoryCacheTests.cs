@@ -1,7 +1,6 @@
 ﻿using FluentAssertions;
 using FluentAssertions.Execution;
 using HttpClient.Cache.InMemory;
-using HttpClient.Cache.InMemory.Clock;
 
 namespace HttpClient.Cache.Tests.InMemory;
 

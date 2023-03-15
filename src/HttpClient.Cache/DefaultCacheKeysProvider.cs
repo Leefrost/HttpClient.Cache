@@ -2,7 +2,7 @@
 
 public class DefaultCacheKeysProvider : ICacheKeysProvider
 {
-    public string GetKey(HttpRequestMessage request)
+    public string GetKey(HttpRequestMessage? request)
     {
         if (request is null)
         {
