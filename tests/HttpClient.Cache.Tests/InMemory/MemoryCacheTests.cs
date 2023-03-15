@@ -4,6 +4,7 @@ using HttpClient.Cache.InMemory;
 
 namespace HttpClient.Cache.Tests.InMemory;
 
+[CollectionDefinition("Sequential", DisableParallelization = true)]
 public class MemoryCacheTests
 {
     [Fact]
