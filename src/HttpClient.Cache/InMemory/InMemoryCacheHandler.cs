@@ -64,7 +64,7 @@ public class InMemoryCacheHandler : DelegatingHandler
         {
             if (await _responseCache.TryGetAsync(key, out var cachedData) && cachedData != default)
             {
-                var cachedResponse = request.PrepareCacheEntry(cachedData);
+                var cachedResponse = request.RestoreResponseFromCache(cachedData);
                 StatsProvider.ReportHit(cachedResponse.StatusCode);
 
                 return cachedResponse;
@@ -82,9 +82,9 @@ public class InMemoryCacheHandler : DelegatingHandler
 
             if (TimeSpan.Zero != absoluteExpirationRelativeToNow)
             {
-                var entry = await response.ToCacheEntry();
+                var entry = await response.ToCacheDataAsync();
                 await _responseCache.TrySetAsync(key, entry, absoluteExpirationRelativeToNow);
-                return request.PrepareCacheEntry(entry);
+                return request.RestoreResponseFromCache(entry);
             }
         }
 

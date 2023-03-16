@@ -2,7 +2,7 @@
 
 public static class HttpResponseMessageExtensions
 {
-    public static async Task<CacheData> ToCacheEntry(this HttpResponseMessage response)
+    public static async Task<CacheData> ToCacheDataAsync(this HttpResponseMessage response)
     {
         var data = await response.Content.ReadAsByteArrayAsync();
         var copy = new HttpResponseMessage
@@ -16,7 +16,7 @@ public static class HttpResponseMessageExtensions
         return entry;
     }
 
-    public static HttpResponseMessage PrepareCacheEntry(this HttpRequestMessage request, CacheData cacheData)
+    public static HttpResponseMessage RestoreResponseFromCache(this HttpRequestMessage request, CacheData cacheData)
     {
         var response = cacheData.Response;
         response.Content = new ByteArrayContent(cacheData.Data);
