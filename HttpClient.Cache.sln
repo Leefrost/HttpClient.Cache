@@ -6,6 +6,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{FCC751F0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClient.Cache.Tests", "tests\HttpClient.Cache.Tests\HttpClient.Cache.Tests.csproj", "{AF0D7A5D-1242-44B1-9584-7D50FF6612DA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{88E718FE-AE0C-4649-A7BC-9D038FC6207A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "samples\ConsoleApp\ConsoleApp.csproj", "{2F33C2DF-0CA0-418B-9D06-8CDAA2DF41BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,8 +24,13 @@ Global
 		{AF0D7A5D-1242-44B1-9584-7D50FF6612DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF0D7A5D-1242-44B1-9584-7D50FF6612DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF0D7A5D-1242-44B1-9584-7D50FF6612DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F33C2DF-0CA0-418B-9D06-8CDAA2DF41BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F33C2DF-0CA0-418B-9D06-8CDAA2DF41BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F33C2DF-0CA0-418B-9D06-8CDAA2DF41BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F33C2DF-0CA0-418B-9D06-8CDAA2DF41BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AF0D7A5D-1242-44B1-9584-7D50FF6612DA} = {FCC751F0-5E00-41CC-BB68-5870C901A75F}
+		{2F33C2DF-0CA0-418B-9D06-8CDAA2DF41BC} = {88E718FE-AE0C-4649-A7BC-9D038FC6207A}
 	EndGlobalSection
 EndGlobal
