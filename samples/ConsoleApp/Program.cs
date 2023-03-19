@@ -33,6 +33,6 @@ using (var httpClient = new System.Net.Http.HttpClient(cacheHandler))
 
 var stats = cacheHandler.StatsProvider.GetReport();
 Console.WriteLine($"Cache stats - total requests: {stats.Total.TotalRequests}");
-Console.WriteLine($"-> Hit: {stats.Total.CacheHit} [{stats.Total.TotalHitsPercent}]");
-Console.WriteLine($"-> Miss: {stats.Total.CacheMiss} [{stats.Total.TotalMissPercent}]");
+Console.WriteLine($"--> Hit: {stats.Total.CacheHit} [{stats.Total.TotalHitsPercent}]");
+Console.WriteLine($"--> Miss: {stats.Total.CacheMiss} [{stats.Total.TotalMissPercent}]");
 Console.ReadLine();
