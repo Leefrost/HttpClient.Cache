@@ -20,10 +20,11 @@ using (var httpClient = new System.Net.Http.HttpClient(cacheHandler))
 {
     for (int i = 1; i <= 5; ++i)
     {
-        Console.Write($"Try: {i}: {url}");
+        Console.Write($"Try: {i}: {url} ");
 
         var stopwatch = Stopwatch.StartNew();
-        await httpClient.GetAsync(url);
+        var result = await httpClient.GetAsync(url);
+        Console.Write($" --> {result.StatusCode} ");
         stopwatch.Stop();
         
         Console.WriteLine($"Done in: {stopwatch.ElapsedMilliseconds} ms");
