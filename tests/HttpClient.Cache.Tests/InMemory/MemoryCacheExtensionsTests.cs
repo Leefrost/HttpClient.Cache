@@ -12,8 +12,10 @@ public class MemoryCacheExtensionsTests
     public async Task  TryGetAsync_GetCacheItemFromMemoryCacheOut_ReturnTrue()
     {
         const string cacheKey = "key";
+        var headers = new Dictionary<string, IEnumerable<string>> { { "header", new[] { "header-value" } } };
+        var contentHeaders = new Dictionary<string, IEnumerable<string>> { { "contentHeader", new[] { "contentHeader-value" } } };
         var memoryCache = new MemoryCache(new MemoryCacheOptions());
-        var cacheData = new CacheData(Encoding.UTF8.GetBytes("message"),
+        var cacheData = new CacheData(Encoding.UTF8.GetBytes("message"), headers, contentHeaders,
             new HttpResponseMessage { StatusCode = HttpStatusCode.OK });
         
         using (var entry = memoryCache.CreateEntry(cacheKey))
@@ -35,8 +37,10 @@ public class MemoryCacheExtensionsTests
     public async Task  TrySetAsync_SetCacheDataByKeyAndExpRelativeToNow_ReturnTrue()
     {
         const string cacheKey = "key";
+        var headers = new Dictionary<string, IEnumerable<string>> { { "header", new[] { "header-value" } } };
+        var contentHeaders = new Dictionary<string, IEnumerable<string>> { { "contentHeader", new[] { "contentHeader-value" } } };
         var memoryCache = new MemoryCache(new MemoryCacheOptions());
-        var cacheData = new CacheData(Encoding.UTF8.GetBytes("message"),
+        var cacheData = new CacheData(Encoding.UTF8.GetBytes("message"), headers, contentHeaders,
             new HttpResponseMessage { StatusCode = HttpStatusCode.OK });
         var absoluteTimeoutRelativeToNow = TimeSpan.FromDays(1);
         
@@ -49,8 +53,10 @@ public class MemoryCacheExtensionsTests
     public async Task  TrySetAsync_SetCacheDataByKeyAndAbsoluteExp_ReturnTrue()
     {
         const string cacheKey = "key";
+        var headers = new Dictionary<string, IEnumerable<string>> { { "header", new[] { "header-value" } } };
+        var contentHeaders = new Dictionary<string, IEnumerable<string>> { { "contentHeader", new[] { "contentHeader-value" } } };
         var memoryCache = new MemoryCache(new MemoryCacheOptions());
-        var cacheData = new CacheData(Encoding.UTF8.GetBytes("message"),
+        var cacheData = new CacheData(Encoding.UTF8.GetBytes("message"), headers, contentHeaders,
             new HttpResponseMessage { StatusCode = HttpStatusCode.OK });
         var absoluteExpiration = DateTimeOffset.UtcNow.AddDays(1);
         
@@ -63,8 +69,10 @@ public class MemoryCacheExtensionsTests
     public async Task  TrySetAsync_SetCacheDataByKeySlidingWindow_ReturnTrue()
     {
         const string cacheKey = "key";
+        var headers = new Dictionary<string, IEnumerable<string>> { { "header", new[] { "header-value" } } };
+        var contentHeaders = new Dictionary<string, IEnumerable<string>> { { "contentHeader", new[] { "contentHeader-value" } } };
         var memoryCache = new MemoryCache(new MemoryCacheOptions());
-        var cacheData = new CacheData(Encoding.UTF8.GetBytes("message"),
+        var cacheData = new CacheData(Encoding.UTF8.GetBytes("message"), headers, contentHeaders,
             new HttpResponseMessage { StatusCode = HttpStatusCode.OK });
         var slidingExpiration = TimeSpan.FromDays(1);
         

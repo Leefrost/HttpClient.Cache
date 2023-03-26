@@ -37,7 +37,9 @@ public class HttpResponseMessageExtensionsTests
             StatusCode = HttpStatusCode.Found,
             Version = Version.Parse("1.0")
         };
-        var cacheData = new CacheData(content, cachedResponse);
+        var headers = new Dictionary<string, IEnumerable<string>> { { "header", new[] { "header-value" } } };
+        var contentHeaders = new Dictionary<string, IEnumerable<string>> { { "contentHeader", new[] { "contentHeader-value" } } };
+        var cacheData = new CacheData(content, headers, contentHeaders,  cachedResponse);
         var newRequest = new HttpRequestMessage { Method = HttpMethod.Get };
 
         var restoredResponse = newRequest.RestoreResponseFromCache(cacheData);
