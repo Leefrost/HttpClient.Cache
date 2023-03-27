@@ -14,7 +14,9 @@ public class CacheDataExtensionsTests
         var message = Encoding.UTF8.GetBytes("Here is a message");
         var response =
             new HttpResponseMessage { Content = new ByteArrayContent(message), StatusCode = HttpStatusCode.OK };
-        var data = new CacheData(message, response);
+        var headers = new Dictionary<string, IEnumerable<string>> { { "header", new[] { "header-value" } } };
+        var contentHeaders = new Dictionary<string, IEnumerable<string>> { { "contentHeader", new[] { "contentHeader-value" } } };
+        var data = new CacheData(message, headers, contentHeaders, response);
 
         var packData = data.Pack();
 
@@ -37,7 +39,9 @@ public class CacheDataExtensionsTests
         var message = Encoding.UTF8.GetBytes("Here is a message");
         var response =
             new HttpResponseMessage { Content = new ByteArrayContent(message), StatusCode = HttpStatusCode.OK };
-        var cacheData = new CacheData(message, response);
+        var headers = new Dictionary<string, IEnumerable<string>> { { "header", new[] { "header-value" } } };
+        var contentHeaders = new Dictionary<string, IEnumerable<string>> { { "contentHeader", new[] { "contentHeader-value" } } };
+        var cacheData = new CacheData(message, headers, contentHeaders, response);
         var serializeObject =  JsonConvert.SerializeObject(cacheData);
         var bytes = new byte[serializeObject.Length * sizeof(char)];
         Buffer.BlockCopy(serializeObject.ToCharArray(), 0, bytes, 0, bytes.Length);
