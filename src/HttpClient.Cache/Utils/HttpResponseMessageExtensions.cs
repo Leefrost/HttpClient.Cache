@@ -1,8 +1,8 @@
 ﻿namespace HttpClient.Cache.Utils;
 
-public static class HttpResponseMessageExtensions
+internal static class HttpResponseMessageExtensions
 {
-    public static async Task<CacheData> ToCacheDataAsync(this HttpResponseMessage response)
+    internal static async Task<CacheData> ToCacheDataAsync(this HttpResponseMessage response)
     {
         var data = await response.Content.ReadAsByteArrayAsync();
         var copiedResponse = new HttpResponseMessage
@@ -22,7 +22,7 @@ public static class HttpResponseMessageExtensions
         return entry;
     }
 
-    public static HttpResponseMessage RestoreResponseFromCache(this HttpRequestMessage request, CacheData cacheData)
+    internal static HttpResponseMessage RestoreResponseFromCache(this HttpRequestMessage request, CacheData cacheData)
     {
         var response = cacheData.Response;
         response.Content = new ByteArrayContent(cacheData.Data);
