@@ -1,8 +1,8 @@
 ﻿namespace HttpClient.Cache;
 
-public static class CacheEntryExtensions
+internal static class CacheEntryExtensions
 {
-    public static ICacheEntry AddExpirationToken(this ICacheEntry entry, IChangeToken token)
+    internal static ICacheEntry AddExpirationToken(this ICacheEntry entry, IChangeToken token)
     {
         if (token == null)
         {
