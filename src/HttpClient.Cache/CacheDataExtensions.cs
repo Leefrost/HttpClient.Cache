@@ -3,9 +3,9 @@ using Newtonsoft.Json;
 
 namespace HttpClient.Cache;
 
-public static class CacheDataExtensions
+internal static class CacheDataExtensions
 {
-    public static byte[] Pack(this CacheData cacheData)
+    internal static byte[] Pack(this CacheData cacheData)
     {
         var json =  JsonConvert.SerializeObject(cacheData);
         var bytes = new byte[json.Length * sizeof(char)];
@@ -14,7 +14,7 @@ public static class CacheDataExtensions
         return bytes;
     }
 
-    public static CacheData? Unpack(this byte[] cacheData)
+    internal static CacheData? Unpack(this byte[] cacheData)
     {
         try
         {

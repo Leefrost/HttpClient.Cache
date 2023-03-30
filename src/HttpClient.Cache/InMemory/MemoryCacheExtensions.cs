@@ -2,7 +2,7 @@
 
 namespace HttpClient.Cache.InMemory;
 
-public static class MemoryCacheExtensions
+internal static class MemoryCacheExtensions
 {
     public static Task<bool> TryGetAsync(this IMemoryCache cache, string key, out CacheData? cacheData)
     {

@@ -20,7 +20,7 @@ using (var httpClient = new System.Net.Http.HttpClient(cacheHandler))
 {
     for (int i = 1; i <= 5; ++i)
     {
-        Console.Write($"Try: {i}: {url} ");
+        Console.Write($"Attempt: {i}: {url} ");
 
         var stopwatch = Stopwatch.StartNew();
         var result = await httpClient.GetAsync(url);
