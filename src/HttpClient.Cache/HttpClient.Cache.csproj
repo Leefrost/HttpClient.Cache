@@ -13,13 +13,6 @@
         <!-- <PackageValidationBaselineVersion>1.0.0</PackageValidationBaselineVersion> -->
     </PropertyGroup>
 
-    <ItemGroup>
-        <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
-            <PrivateAssets>all</PrivateAssets>
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-        </PackageReference>
-    </ItemGroup>
-
     <PropertyGroup>
         <GenerateDocumentationFile>True</GenerateDocumentationFile>
 
@@ -28,6 +21,7 @@
     </PropertyGroup>
 
     <PropertyGroup>
+        <PackageId>Leefrost.HttpClient.Cache</PackageId>
         <Authors>Sergii Lischuk</Authors>
         <Description>A simple and easy cache for HttpClient</Description>
 
