@@ -7,24 +7,40 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <Authors>Sergii Lischuk</Authors>
-        <Description>A simple and easy cache for HttpClient</Description>
-        <PackageProjectUrl>https://codestory.me</PackageProjectUrl>
-        <PackageTags>cache, httpclient, library</PackageTags>
-        
-        <GenerateDocumentationFile>True</GenerateDocumentationFile>
-        <NoWarn>$(NoWarn);CS1591</NoWarn>
         <EnablePackageValidation>true</EnablePackageValidation>
+
         <!-- Optional: Detect breaking changes from a previous version -->
         <!-- <PackageValidationBaselineVersion>1.0.0</PackageValidationBaselineVersion> -->
     </PropertyGroup>
 
+    <ItemGroup>
+        <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
     <PropertyGroup>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <GenerateDocumentationFile>True</GenerateDocumentationFile>
+
+        <!-- If all members are not documented, you can disable the compiler warnings -->
+        <NoWarn>$(NoWarn);CS1591</NoWarn>
     </PropertyGroup>
 
     <PropertyGroup>
-        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <Authors>Sergii Lischuk</Authors>
+        <Description>A simple and easy cache for HttpClient</Description>
+
+        <!-- PackageProjectUrl is different from the repository URL. It can be a documentation
+             website or a website explaining the project -->
+        <PackageProjectUrl>https://codestory.me</PackageProjectUrl>
+
+        <!-- A list of tags to help the search engine to understand the content of the package -->
+        <PackageTags>cache, httpclient, library</PackageTags>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -35,11 +51,19 @@
         <None Include="icon.png" Pack="true" PackagePath="" />
     </ItemGroup>
 
+    <PropertyGroup>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
     <ItemGroup>
-        <None Include="README.md" Pack="true" PackagePath="" />
+        <None Include="README.md" Pack="true" PackagePath=""/>
     </ItemGroup>
     
     <ItemGroup>
+      <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
       <PackageReference Include="MinVer" Version="4.3.0">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
