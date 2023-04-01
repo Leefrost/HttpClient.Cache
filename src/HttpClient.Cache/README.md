@@ -58,8 +58,8 @@ using (var httpClient = new HttpClient(cacheHandler))
 //Checking cache stats
 var stats = cacheHandler.StatsProvider.GetReport();
 Console.WriteLine($"Cache stats - total requests: {stats.Total.TotalRequests}");
-Console.WriteLine($"--> Hit: {stats.Total.CacheHit} [{stats.Total.TotalHitsPercent}]");
-Console.WriteLine($"--> Miss: {stats.Total.CacheMiss} [{stats.Total.TotalMissPercent}]");
+Console.WriteLine($"--> Hits: {stats.Total.CacheHit} [{stats.Total.TotalHitsPercent}]");
+Console.WriteLine($"--> Misses: {stats.Total.CacheMiss} [{stats.Total.TotalMissPercent}]");
 Console.ReadLine();
 ```
 
