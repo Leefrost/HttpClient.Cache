@@ -24,12 +24,9 @@
         <PackageId>Leefrost.HttpClient.Cache</PackageId>
         <Authors>Sergii Lischuk</Authors>
         <Description>A simple and easy cache for HttpClient</Description>
-
-        <!-- PackageProjectUrl is different from the repository URL. It can be a documentation
-             website or a website explaining the project -->
+        <RepositoryType>Github</RepositoryType>
+        <RepositoryUrl>https://github.com/Leefrost/HttpClient.Cache</RepositoryUrl>
         <PackageProjectUrl>https://codestory.me</PackageProjectUrl>
-
-        <!-- A list of tags to help the search engine to understand the content of the package -->
         <PackageTags>cache, httpclient, library</PackageTags>
     </PropertyGroup>
 
