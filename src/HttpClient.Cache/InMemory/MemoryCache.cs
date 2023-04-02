@@ -233,7 +233,7 @@ public sealed class MemoryCache : IMemoryCache
 
         _lastExpirationScan = currentTime;
 
-        Task.Factory.StartNew(state => ScanForExpiredItems((MemoryCache)state), this, CancellationToken.None,
+        Task.Factory.StartNew(state => ScanForExpiredItems((MemoryCache)state!), this, CancellationToken.None,
             TaskCreationOptions.DenyChildAttach, TaskScheduler.Default);
     }
 
