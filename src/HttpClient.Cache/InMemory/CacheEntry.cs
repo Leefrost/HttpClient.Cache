@@ -34,7 +34,7 @@ internal class CacheEntry : ICacheEntry
     }
 
     public object Key { get; }
-    public object Value { get; set; }
+    public object Value { get; set; } = null!;
     
     public CacheEntryPriority Priority { get; set; } = CacheEntryPriority.Normal;
 
@@ -222,7 +222,7 @@ internal class CacheEntry : ICacheEntry
             return;
         }
 
-        Task.Factory.StartNew(state => InvokeCallbacks((CacheEntry)state), this, CancellationToken.None,
+        Task.Factory.StartNew(state => InvokeCallbacks((CacheEntry)state!), this, CancellationToken.None,
             TaskCreationOptions.DenyChildAttach, TaskScheduler.Default);
     }
 
