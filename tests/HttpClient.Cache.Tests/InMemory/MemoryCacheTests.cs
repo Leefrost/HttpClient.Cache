@@ -3,15 +3,13 @@ using FluentAssertions.Execution;
 using HttpClient.Cache.InMemory;
 
 namespace HttpClient.Cache.Tests.InMemory;
-
-[CollectionDefinition("Sequential", DisableParallelization = true)]
 public class MemoryCacheTests
 {
     [Fact]
     public void CreateEntry_Create10NewEntryAndSetValue_CacheContains10Items()
     {
         var expiration = TimeSpan.FromHours(1);
-        var options = new MemoryCacheOptions();
+        var options = new MemoryCacheOptions { ExpirationScanFrequency = TimeSpan.FromSeconds(1.0) };
         var cache = new MemoryCache(options);
 
         for (var i = 1; i <= 10; ++i)
@@ -34,18 +32,18 @@ public class MemoryCacheTests
     [Fact]
     public async Task CreateEntry_ExpireAbsoluteExpirationRelativeToNow_CacheIsEmpty()
     {
-        var options = new MemoryCacheOptions();
+        var options = new MemoryCacheOptions { ExpirationScanFrequency = TimeSpan.FromSeconds(1.0) };
         var cache = new MemoryCache(options);
         
         using(var entry = cache.CreateEntry("key")){
-            entry.AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(3);
+            entry.AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(2);
             entry.Value = $"value";
         }
 
         using (new AssertionScope())
         {
             cache.Count.Should().Be(1);
-            await Task.Delay(TimeSpan.FromSeconds(4));
+            await Task.Delay(TimeSpan.FromSeconds(3));
 
             var value = cache.TryGetValue("key", out var cacheEntry);
             value.Should().BeFalse();
@@ -58,7 +56,7 @@ public class MemoryCacheTests
     public async Task CreateEntry_ExpireSlidingExpiration_CacheIsEmpty()
     {
         var expiration = TimeSpan.FromSeconds(2);
-        var options = new MemoryCacheOptions();
+        var options = new MemoryCacheOptions { ExpirationScanFrequency = TimeSpan.FromSeconds(1.0) };
         var cache = new MemoryCache(options);
         
         using(var entry = cache.CreateEntry("key")){
@@ -82,7 +80,7 @@ public class MemoryCacheTests
     [Fact]
     public async Task CreateEntry_ExpireAbsoluteDate_CacheIsEmpty()
     {
-        var options = new MemoryCacheOptions();
+        var options = new MemoryCacheOptions { ExpirationScanFrequency = TimeSpan.FromSeconds(1.0) };
         var cache = new MemoryCache(options);
         
         using(var entry = cache.CreateEntry("key")){
