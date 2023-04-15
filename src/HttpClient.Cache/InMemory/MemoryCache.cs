@@ -6,16 +6,16 @@ namespace HttpClient.Cache.InMemory;
 public sealed class MemoryCache : IMemoryCache
 {
     private readonly ISystemClock _clock;
-    private readonly ConcurrentDictionary<object, CacheEntry> _cacheEntries;
-    private readonly Action<CacheEntry> _entryExpirationNotification;
+    private readonly ConcurrentDictionary<object, MemoryCacheEntry> _cacheEntries;
+    private readonly Action<MemoryCacheEntry> _entryExpirationNotification;
     
     private readonly TimeSpan _expirationScanFrequency;
-    private readonly Action<CacheEntry> _setEntry;
+    private readonly Action<MemoryCacheEntry> _setEntry;
 
     private bool _isDisposed;
     private DateTimeOffset _lastExpirationScan;
     
-    private ICollection<KeyValuePair<object, CacheEntry>> CacheEntries => _cacheEntries;
+    private ICollection<KeyValuePair<object, MemoryCacheEntry>> CacheEntries => _cacheEntries;
 
     public MemoryCache() 
         : this(new MemoryCacheOptions())
@@ -29,7 +29,7 @@ public sealed class MemoryCache : IMemoryCache
             throw new ArgumentNullException(nameof(options));
         }
 
-        _cacheEntries = new ConcurrentDictionary<object, CacheEntry>();
+        _cacheEntries = new ConcurrentDictionary<object, MemoryCacheEntry>();
         _setEntry = SetEntry;
         _entryExpirationNotification = EntryExpired;
 
@@ -52,7 +52,7 @@ public sealed class MemoryCache : IMemoryCache
             throw new ObjectDisposedException(typeof(MemoryCache).FullName);
         }
         
-        return new CacheEntry(key, _setEntry, _entryExpirationNotification);
+        return new MemoryCacheEntry(key, _setEntry, _entryExpirationNotification);
     }
 
     public bool TryGetValue(object key, out object? value)
@@ -71,7 +71,7 @@ public sealed class MemoryCache : IMemoryCache
         var currentTime = _clock.UtcNow;
         
         bool isEntryFound = false;
-        if (_cacheEntries.TryGetValue(key, out CacheEntry? entry))
+        if (_cacheEntries.TryGetValue(key, out MemoryCacheEntry? entry))
         {
             if (entry.IsExpired(currentTime) && entry.EvictionReason != EvictionReason.Replaced)
             {
@@ -101,7 +101,7 @@ public sealed class MemoryCache : IMemoryCache
             throw new ArgumentNullException(nameof(key));
         }
 
-        if (_cacheEntries.TryRemove(key, out CacheEntry? cacheEntry))
+        if (_cacheEntries.TryRemove(key, out MemoryCacheEntry? cacheEntry))
         {
             cacheEntry.ExpireEntryByReason(EvictionReason.Removed);
             cacheEntry.InvokeEvictionCallbacks();
@@ -120,7 +120,7 @@ public sealed class MemoryCache : IMemoryCache
         var keys = _cacheEntries.Keys.ToList();
         foreach (object key in keys)
         {
-            if (_cacheEntries.TryRemove(key, out CacheEntry? cacheEntry))
+            if (_cacheEntries.TryRemove(key, out MemoryCacheEntry? cacheEntry))
             {
                 cacheEntry.ExpireEntryByReason(EvictionReason.Removed);
                 cacheEntry.InvokeEvictionCallbacks();
@@ -135,7 +135,7 @@ public sealed class MemoryCache : IMemoryCache
         Dispose(true);
     }
 
-    private void SetEntry(CacheEntry entry)
+    private void SetEntry(MemoryCacheEntry entry)
     {
         if (_isDisposed)
         {
@@ -162,7 +162,7 @@ public sealed class MemoryCache : IMemoryCache
 
         entry.LastAccessed = currentTime;
         
-        if (_cacheEntries.TryGetValue(entry.Key, out CacheEntry? cacheEntry))
+        if (_cacheEntries.TryGetValue(entry.Key, out MemoryCacheEntry? cacheEntry))
         {
             cacheEntry.ExpireEntryByReason(EvictionReason.Replaced);
         }
@@ -207,9 +207,9 @@ public sealed class MemoryCache : IMemoryCache
         StartScanForExpiredItems();
     }
 
-    private void RemoveEntry(CacheEntry entry)
+    private void RemoveEntry(MemoryCacheEntry entry)
     {
-        if (!CacheEntries.Remove(new KeyValuePair<object, CacheEntry>(entry.Key, entry)))
+        if (!CacheEntries.Remove(new KeyValuePair<object, MemoryCacheEntry>(entry.Key, entry)))
         {
             return;
         }
@@ -217,7 +217,7 @@ public sealed class MemoryCache : IMemoryCache
         entry.InvokeEvictionCallbacks();
     }
 
-    private void EntryExpired(CacheEntry entry)
+    private void EntryExpired(MemoryCacheEntry entry)
     {
         RemoveEntry(entry);
         StartScanForExpiredItems();
@@ -240,7 +240,7 @@ public sealed class MemoryCache : IMemoryCache
     private static void ScanForExpiredItems(MemoryCache cache)
     {
         var currentTime = cache._clock.UtcNow;
-        foreach (CacheEntry entry in cache._cacheEntries.Values)
+        foreach (MemoryCacheEntry entry in cache._cacheEntries.Values)
         {
             if (entry.IsExpired(currentTime))
             {
