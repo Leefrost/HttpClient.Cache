@@ -33,7 +33,7 @@ public sealed class MemoryCache : IMemoryCache
         _setEntry = SetEntry;
         _entryExpirationNotification = EntryExpired;
 
-        _clock = options.Clock ?? new SystemClock();
+        _clock = options.Clock ?? new DefaultSystemClock();
         _expirationScanFrequency = options.ExpirationScanFrequency;
         _lastExpirationScan = _clock.UtcNow;
     }
