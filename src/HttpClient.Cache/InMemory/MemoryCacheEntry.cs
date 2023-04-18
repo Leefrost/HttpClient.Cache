@@ -82,9 +82,14 @@ internal class MemoryCacheEntry : ICacheEntry
         }
     }
 
-    public IList<PostEvictionCallbackRegistration> PostEvictionCallbacks => 
-        _postEvictionCallbacks ?? new List<PostEvictionCallbackRegistration>();
-    
+    public IList<PostEvictionCallbackRegistration> PostEvictionCallbacks
+    {
+        get
+        {
+            return _postEvictionCallbacks ??= new List<PostEvictionCallbackRegistration>();
+        }
+    }
+
     internal DateTimeOffset LastAccessed { get; set; }
     
     internal EvictionReason EvictionReason { get; private set; }
