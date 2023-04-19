@@ -1,0 +1,1671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created by yFiles WPF 3.4.0.0-->
+<graphml xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/3.0" xmlns:y="http://www.yworks.com/xml/yfiles-common/3.0" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml.wpf/3.0/ygraphml.xsd " xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://graphml.graphdrawing.org/xmlns">
+  <key id="d0" attr.type="boolean" attr.name="Expanded" for="node" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/Expanded">
+    <default>true</default>
+  </key>
+  <key id="d1" attr.name="metadata" for="node">
+    <default>
+      <x:Null />
+    </default>
+  </key>
+  <key id="d2" attr.type="boolean" attr.name="is_group_node" for="node">
+    <default>false</default>
+  </key>
+  <key id="d3" attr.type="string" attr.name="type_node" for="node" />
+  <key id="d4" attr.name="path" for="node">
+    <default>
+      <x:Null />
+    </default>
+  </key>
+  <key id="d5" attr.type="boolean" attr.name="is_static" for="node">
+    <default>false</default>
+  </key>
+  <key id="d6" attr.type="string" attr.name="type_element" for="node" />
+  <key id="d7" attr.type="string" attr.name="type" for="node" />
+  <key id="d8" attr.type="string" attr.name="access" for="node" />
+  <key id="d9" attr.type="string" attr.name="fqn" for="node" />
+  <key id="d10" attr.type="string" attr.name="display_name" for="node" />
+  <key id="d11" attr.name="NodeLabels" for="node" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeLabels" />
+  <key id="d12" attr.name="NodeGeometry" for="node" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeGeometry" />
+  <key id="d13" attr.name="UserTags" for="all" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/UserTags" />
+  <key id="d14" attr.name="NodeViewState" for="node" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/NodeViewState" />
+  <key id="d15" attr.type="string" attr.name="target" for="edge" />
+  <key id="d16" attr.type="string" attr.name="source" for="edge" />
+  <key id="d17" attr.type="string" attr.name="dependency_type" for="edge" />
+  <key id="d18" attr.name="EdgeLabels" for="edge" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeLabels" />
+  <key id="d19" attr.name="EdgeGeometry" for="edge" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeGeometry" />
+  <key id="d20" attr.name="EdgeViewState" for="edge" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/EdgeViewState" />
+  <key id="d21" attr.name="PortLabels" for="port" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLabels" />
+  <key id="d22" attr.name="PortLocationParameter" for="port" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLocationParameter">
+    <default>
+      <x:Static Member="y:FreeNodePortLocationModel.NodeCenterAnchored" />
+    </default>
+  </key>
+  <key id="d23" attr.name="PortViewState" for="port" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/PortViewState" />
+  <key id="d24" attr.name="SharedData" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/SharedData" />
+  <key id="d25" attr.name="layouting" />
+  <key id="d26" attr.name="graph_control_center" />
+  <key id="d27" attr.name="graph_control_zoom" />
+  <key id="d28" attr.name="grouping_depth" />
+  <key id="d29" attr.name="grouping_id" />
+  <data key="d24">
+    <y:SharedData>
+      <y:EdgeSegmentLabelModel x:Key="1" Distance="10" AutoRotationEnabled="False" />
+    </y:SharedData>
+  </data>
+  <data key="d25">Organic</data>
+  <data key="d26">
+    <y:PointD X="3332.9491461706425" Y="1177.1855039354234" />
+  </data>
+  <data key="d27">0.340152426795026</data>
+  <data key="d28">0</data>
+  <data key="d29">None</data>
+  <graph id="G">
+    <node id="n0">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[Unknown]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\InMemory\Clock\DefaultSystemClock.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.Clock.DefaultSystemClock]]></data>
+      <data key="d7"><![CDATA[class]]></data>
+      <data key="d8"><![CDATA[internal]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.InMemory.Clock.DefaultSystemClock]]></data>
+      <data key="d10"><![CDATA[DefaultSystemClock]]></data>
+      <data key="d12">
+        <y:RectD X="1020.0083333333332" Y="2309.5" Width="391.78000000000003" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.252695673875929,1" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.5" />
+        </data>
+      </port>
+      <port name="p2">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.833568726212558,0" />
+        </data>
+      </port>
+    </node>
+    <node id="n1">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[Interface]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\InMemory\Clock\ISystemClock.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.Clock.ISystemClock]]></data>
+      <data key="d7"><![CDATA[interface]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.InMemory.Clock.ISystemClock]]></data>
+      <data key="d10"><![CDATA[ISystemClock]]></data>
+      <data key="d12">
+        <y:RectD X="1060.4266666666667" Y="2481" Width="296.94333333333338" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.197286051584852,0" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.278409090909091" />
+        </data>
+      </port>
+      <port name="p2">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.721590909090909" />
+        </data>
+      </port>
+      <port name="p3">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.558181695721967,0" />
+        </data>
+      </port>
+    </node>
+    <node id="n2">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[Interface]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\InMemory\IMemoryCache.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.IMemoryCache]]></data>
+      <data key="d7"><![CDATA[interface]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.InMemory.IMemoryCache]]></data>
+      <data key="d10"><![CDATA[IMemoryCache]]></data>
+      <data key="d12">
+        <y:RectD X="1688.8466666666661" Y="1389" Width="323.10333333333335" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.757575757575758" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.278409090909091" />
+        </data>
+      </port>
+      <port name="p2">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.721590909090909" />
+        </data>
+      </port>
+      <port name="p3">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.219518781401204,1" />
+        </data>
+      </port>
+      <port name="p4">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.514412313914022,0" />
+        </data>
+      </port>
+    </node>
+    <node id="n3">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[Interface]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\ICacheEntry.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.ICacheEntry]]></data>
+      <data key="d7"><![CDATA[interface]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.ICacheEntry]]></data>
+      <data key="d10"><![CDATA[ICacheEntry]]></data>
+      <data key="d12">
+        <y:RectD X="2268.8316666666674" Y="1384" Width="278.13333333333333" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.81439393939394" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.822261505273247,0" />
+        </data>
+      </port>
+      <port name="p2">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.204545454545455" />
+        </data>
+      </port>
+      <port name="p3">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.5" />
+        </data>
+      </port>
+      <port name="p4">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.0600621204857776,1" />
+        </data>
+      </port>
+      <port name="p5">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.309343434343434" />
+        </data>
+      </port>
+      <port name="p6">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.542095825676465,1" />
+        </data>
+      </port>
+      <port name="p7">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.928769175455416,0" />
+        </data>
+      </port>
+      <port name="p8">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.462523137051238,1" />
+        </data>
+      </port>
+    </node>
+    <node id="n4">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[Unknown]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\CacheEntryPriority.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.CacheEntryPriority]]></data>
+      <data key="d7"><![CDATA[enum]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.CacheEntryPriority]]></data>
+      <data key="d10"><![CDATA[CacheEntryPriority]]></data>
+      <data key="d12">
+        <y:RectD X="2581.21" Y="1150" Width="374.37666666666667" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.9375" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.247159090909091" />
+        </data>
+      </port>
+      <port name="p2">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.18441320238975,1" />
+        </data>
+      </port>
+      <port name="p3">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.5" />
+        </data>
+      </port>
+      <port name="p4">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.368938813850579,1" />
+        </data>
+      </port>
+    </node>
+    <node id="n5">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[Interface]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\IChangeToken.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.IChangeToken]]></data>
+      <data key="d7"><![CDATA[interface]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.IChangeToken]]></data>
+      <data key="d10"><![CDATA[IChangeToken]]></data>
+      <data key="d12">
+        <y:RectD X="4066.7316666666666" Y="1550" Width="309.33333333333337" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.258081896551726,0" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.306818181818182" />
+        </data>
+      </port>
+      <port name="p2">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.741918103448279,0" />
+        </data>
+      </port>
+      <port name="p3">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.557954545454544" />
+        </data>
+      </port>
+    </node>
+    <node id="n6">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[Unknown]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\PostEvictionCallbackRegistration.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.PostEvictionCallbackRegistration]]></data>
+      <data key="d7"><![CDATA[record]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.PostEvictionCallbackRegistration]]></data>
+      <data key="d10"><![CDATA[PostEvictionCallbackRegistration]]></data>
+      <data key="d12">
+        <y:RectD X="3432.9283333333333" Y="2068" Width="571.94" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.749186686249141,0" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.3293205127707,0" />
+        </data>
+      </port>
+      <port name="p2">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.91706152160483,1" />
+        </data>
+      </port>
+      <port name="p3">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.5" />
+        </data>
+      </port>
+      <port name="p4">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.91056744491458,0" />
+        </data>
+      </port>
+      <port name="p5">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.382776165332028,0" />
+        </data>
+      </port>
+      <port name="p6">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.210227272727273" />
+        </data>
+      </port>
+    </node>
+    <node id="n7">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[Unknown]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\InMemory\InMemoryCacheHandler.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.InMemoryCacheHandler]]></data>
+      <data key="d7"><![CDATA[class]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.InMemory.InMemoryCacheHandler]]></data>
+      <data key="d10"><![CDATA[InMemoryCacheHandler]]></data>
+      <data key="d12">
+        <y:RectD X="1182.9983333333334" Y="1064" Width="453.8" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.958872606630429,1" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.898653959159688,1" />
+        </data>
+      </port>
+      <port name="p2">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.394886363636364" />
+        </data>
+      </port>
+      <port name="p3">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.622159090909091" />
+        </data>
+      </port>
+      <port name="p4">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.838435311688947,1" />
+        </data>
+      </port>
+      <port name="p5">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.378577199941237,1" />
+        </data>
+      </port>
+      <port name="p6">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.167613636363636" />
+        </data>
+      </port>
+      <port name="p7">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.133537779736545,1" />
+        </data>
+      </port>
+      <port name="p8">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.978945489120676,1" />
+        </data>
+      </port>
+      <port name="p9">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.289772727272727" />
+        </data>
+      </port>
+      <port name="p10">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.5,0" />
+        </data>
+      </port>
+    </node>
+    <node id="n8">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[Interface]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\Stats\ICacheStatsProvider.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Stats.ICacheStatsProvider]]></data>
+      <data key="d7"><![CDATA[interface]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.Stats.ICacheStatsProvider]]></data>
+      <data key="d10"><![CDATA[ICacheStatsProvider]]></data>
+      <data key="d12">
+        <y:RectD X="292.43166666666662" Y="636.5" Width="391.93333333333334" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.5" Offset="5.6843418860808E-14,0" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.0846636332709645,0" />
+        </data>
+      </port>
+      <port name="p2">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.841361200884504,0" />
+        </data>
+      </port>
+    </node>
+    <node id="n9">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[Interface]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\ICacheKeysProvider.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.ICacheKeysProvider]]></data>
+      <data key="d7"><![CDATA[interface]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.ICacheKeysProvider]]></data>
+      <data key="d10"><![CDATA[ICacheKeysProvider]]></data>
+      <data key="d12">
+        <y:RectD X="42.938333333333276" Y="1098" Width="387.92" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.235795454545455" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.5,1" />
+        </data>
+      </port>
+    </node>
+    <node id="n10">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[Unknown]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\InMemory\MemoryCache.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCache]]></data>
+      <data key="d7"><![CDATA[class]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.InMemory.MemoryCache]]></data>
+      <data key="d10"><![CDATA[MemoryCache]]></data>
+      <data key="d12">
+        <y:RectD X="1694.1" Y="1543.5" Width="313.59666666666669" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.5" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.419324007837385,1" />
+        </data>
+      </port>
+      <port name="p2">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.580675992162615,1" />
+        </data>
+      </port>
+      <port name="p3">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.204545454545455" Offset="1.13686837721616E-13,0" />
+        </data>
+      </port>
+      <port name="p4">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.0966200391869246,1" />
+        </data>
+      </port>
+      <port name="p5">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.257972023512154,1" />
+        </data>
+      </port>
+      <port name="p6">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.5" Offset="1.13686837721616E-13,0" />
+        </data>
+      </port>
+      <port name="p7">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.930375003986013,1" />
+        </data>
+      </port>
+      <port name="p8">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.209421603120781,0" />
+        </data>
+      </port>
+    </node>
+    <node id="n11">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[Unknown]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\InMemory\MemoryCacheOptions.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheOptions]]></data>
+      <data key="d7"><![CDATA[class]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.InMemory.MemoryCacheOptions]]></data>
+      <data key="d10"><![CDATA[MemoryCacheOptions]]></data>
+      <data key="d12">
+        <y:RectD X="1094.98" Y="1681" Width="424.8366666666667" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.61156836745102,0" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.5" />
+        </data>
+      </port>
+      <port name="p2">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.308812798644185,1" />
+        </data>
+      </port>
+      <port name="p3">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.5922367550405,1" />
+        </data>
+      </port>
+    </node>
+    <node id="n12">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[LogicOwner]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\Stats\DefaultCacheStatsProvider.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Stats.DefaultCacheStatsProvider]]></data>
+      <data key="d7"><![CDATA[class]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.Stats.DefaultCacheStatsProvider]]></data>
+      <data key="d10"><![CDATA[DefaultCacheStatsProvider]]></data>
+      <data key="d12">
+        <y:RectD X="560.01333333333332" Y="419" Width="486.77000000000004" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.989728208394108,1" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.107696311057241,0" />
+        </data>
+      </port>
+      <port name="p2">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.5" />
+        </data>
+      </port>
+      <port name="p3">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.127731440584533,1" />
+        </data>
+      </port>
+    </node>
+    <node id="n13">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[LogicOwner]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\DefaultCacheKeysProvider.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.DefaultCacheKeysProvider]]></data>
+      <data key="d7"><![CDATA[class]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.DefaultCacheKeysProvider]]></data>
+      <data key="d10"><![CDATA[DefaultCacheKeysProvider]]></data>
+      <data key="d12">
+        <y:RectD X="18.019999999999982" Y="1296.5" Width="482.75666666666672" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.681818181818182" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.453392668494134,0" />
+        </data>
+      </port>
+    </node>
+    <node id="n14">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\InMemory\MemoryCacheExtensions.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d5">true</data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheExtensions]]></data>
+      <data key="d7"><![CDATA[class]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.InMemory.MemoryCacheExtensions]]></data>
+      <data key="d10"><![CDATA[MemoryCacheExtensions]]></data>
+      <data key="d12">
+        <y:RectD X="1698.1599999999999" Y="1218.5" Width="463.47666666666669" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.5" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.338517580892241,1" />
+        </data>
+      </port>
+      <port name="p2">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.79718504347576,0" />
+        </data>
+      </port>
+      <port name="p3">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.873995814244515,0" />
+        </data>
+      </port>
+      <port name="p4">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.865487654898125,1" />
+        </data>
+      </port>
+      <port name="p5">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.950806585013269,0" />
+        </data>
+      </port>
+    </node>
+    <node id="n15">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\Utils\HttpResponseMessageExtensions.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d5">true</data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Utils.HttpResponseMessageExtensions]]></data>
+      <data key="d7"><![CDATA[class]]></data>
+      <data key="d8"><![CDATA[internal]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.Utils.HttpResponseMessageExtensions]]></data>
+      <data key="d10"><![CDATA[HttpResponseMessageExtensions]]></data>
+      <data key="d12">
+        <y:RectD X="1439.96" Y="485" Width="579.87666666666678" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.58896863126067,1" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.982966205457483,0" />
+        </data>
+      </port>
+    </node>
+    <node id="n16">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\Utils\HttpStatusCodeExtensions.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d5">true</data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Utils.HttpStatusCodeExtensions]]></data>
+      <data key="d7"><![CDATA[class]]></data>
+      <data key="d8"><![CDATA[internal]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.Utils.HttpStatusCodeExtensions]]></data>
+      <data key="d10"><![CDATA[HttpStatusCodeExtensions]]></data>
+      <data key="d12">
+        <y:RectD X="1178.6066666666666" Y="877" Width="483.58333333333337" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.478287092882992,1" />
+        </data>
+      </port>
+    </node>
+    <node id="n17">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[Unknown]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\Stats\CacheStatsReport.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Stats.CacheStatsReport]]></data>
+      <data key="d7"><![CDATA[class]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.Stats.CacheStatsReport]]></data>
+      <data key="d10"><![CDATA[CacheStatsReport]]></data>
+      <data key="d12">
+        <y:RectD X="0" Y="419" Width="358.79666666666668" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.90751725675638,1" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.5" />
+        </data>
+      </port>
+      <port name="p2">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.940272577783146,0" />
+        </data>
+      </port>
+    </node>
+    <node id="n18">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[Unknown]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\InMemory\MemoryCacheEntry.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheEntry]]></data>
+      <data key="d7"><![CDATA[class]]></data>
+      <data key="d8"><![CDATA[internal]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.InMemory.MemoryCacheEntry]]></data>
+      <data key="d10"><![CDATA[MemoryCacheEntry]]></data>
+      <data key="d12">
+        <y:RectD X="2202.0633333333335" Y="1534.5" Width="388.67" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.306818181818182" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.55971197240542,1" />
+        </data>
+      </port>
+      <port name="p2">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.805681818181819" Offset="5.6843418860808E-14,0" />
+        </data>
+      </port>
+      <port name="p3">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.482954545454545" Offset="5.6843418860808E-14,0" />
+        </data>
+      </port>
+      <port name="p4">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.506818181818181" Offset="5.6843418860808E-14,0" />
+        </data>
+      </port>
+      <port name="p5">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.255681818181818" Offset="5.6843418860808E-14,0" />
+        </data>
+      </port>
+      <port name="p6">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.0801653597405777,1" />
+        </data>
+      </port>
+      <port name="p7">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.757954545454546" Offset="5.6843418860808E-14,0" />
+        </data>
+      </port>
+      <port name="p8">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.55971197240542,0" />
+        </data>
+      </port>
+    </node>
+    <node id="n19">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[Unknown]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\EvictionReason.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.EvictionReason]]></data>
+      <data key="d7"><![CDATA[enum]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.EvictionReason]]></data>
+      <data key="d10"><![CDATA[EvictionReason]]></data>
+      <data key="d12">
+        <y:RectD X="1964.0283333333336" Y="1860.5" Width="322.74" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.0676524963334775,0" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.834085859733439,0" />
+        </data>
+      </port>
+    </node>
+    <node id="n20">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[Unknown]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\Stats\CacheStatsResult.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Stats.CacheStatsResult]]></data>
+      <data key="d7"><![CDATA[class]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.Stats.CacheStatsResult]]></data>
+      <data key="d10"><![CDATA[CacheStatsResult]]></data>
+      <data key="d12">
+        <y:RectD X="315.93666666666672" Y="0" Width="348.92333333333335" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.849756871136926,1" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.0614175033675018,1" />
+        </data>
+      </port>
+    </node>
+    <node id="n21">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[Unknown]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\CacheData.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.CacheData]]></data>
+      <data key="d7"><![CDATA[class]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.CacheData]]></data>
+      <data key="d10"><![CDATA[CacheData]]></data>
+      <data key="d12">
+        <y:RectD X="2000.0816666666667" Y="164" Width="259.63333333333333" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.260193863140326,1" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.0380440364616778,1" />
+        </data>
+      </port>
+      <port name="p2">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.426136363636364" Offset="1.13686837721616E-13,0" />
+        </data>
+      </port>
+    </node>
+    <node id="n22">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\CacheDataExtensions.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d5">true</data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.CacheDataExtensions]]></data>
+      <data key="d7"><![CDATA[class]]></data>
+      <data key="d8"><![CDATA[internal]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.CacheDataExtensions]]></data>
+      <data key="d10"><![CDATA[CacheDataExtensions]]></data>
+      <data key="d12">
+        <y:RectD X="2338.6416666666664" Y="151" Width="409.51333333333338" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.5,1" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.573863636363636" />
+        </data>
+      </port>
+    </node>
+    <node id="n23">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[Unknown]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\PostEvictionCallbackRegistration.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.PostEvictionDelegate]]></data>
+      <data key="d7"><![CDATA[delegate]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.PostEvictionDelegate]]></data>
+      <data key="d10"><![CDATA[PostEvictionDelegate]]></data>
+      <data key="d12">
+        <y:RectD X="3476.8" Y="2354" Width="408.19666666666666" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.716120633572597,0" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.5" />
+        </data>
+      </port>
+    </node>
+    <node id="n24">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\InMemory\MemoryCacheEntryExtensions.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d5">true</data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheEntryExtensions]]></data>
+      <data key="d7"><![CDATA[class]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.InMemory.MemoryCacheEntryExtensions]]></data>
+      <data key="d10"><![CDATA[MemoryCacheEntryExtensions]]></data>
+      <data key="d12">
+        <y:RectD X="2827.1233333333334" Y="861" Width="538.55" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.6875" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.806211122458453,1" />
+        </data>
+      </port>
+      <port name="p2">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.5" />
+        </data>
+      </port>
+    </node>
+    <node id="n25">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d3"><![CDATA[Unknown]]></data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\InMemory\MemoryCacheEntryOptions.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheEntryOptions]]></data>
+      <data key="d7"><![CDATA[class]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.InMemory.MemoryCacheEntryOptions]]></data>
+      <data key="d10"><![CDATA[MemoryCacheEntryOptions]]></data>
+      <data key="d12">
+        <y:RectD X="3156.9433333333336" Y="1150" Width="499.91" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.208767578164069,0" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0,0.5" />
+        </data>
+      </port>
+      <port name="p2">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.5" />
+        </data>
+      </port>
+      <port name="p3">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.989998199675941,1" />
+        </data>
+      </port>
+    </node>
+    <node id="n26">
+      <data key="d1">
+        <sys:Dictionary x:TypeArguments="sys:String,sys:String" />
+      </data>
+      <data key="d4">
+        <x:Array Type="sys:String">
+          <sys:String>D:\Repositories\GitHub\HttpClient.Cache\src\HttpClient.Cache\CacheEntryExtensions.cs</sys:String>
+        </x:Array>
+      </data>
+      <data key="d5">true</data>
+      <data key="d6"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.CacheEntryExtensions]]></data>
+      <data key="d7"><![CDATA[class]]></data>
+      <data key="d8"><![CDATA[public]]></data>
+      <data key="d9"><![CDATA[HttpClient.Cache.CacheEntryExtensions]]></data>
+      <data key="d10"><![CDATA[CacheEntryExtensions]]></data>
+      <data key="d12">
+        <y:RectD X="2836.145" Y="2017" Width="418.50666666666666" Height="88" />
+      </data>
+      <port name="p0">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.0553625191155866,0" />
+        </data>
+      </port>
+      <port name="p1">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.142193075379126,0" />
+        </data>
+      </port>
+      <port name="p2">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.706099531137166,0" />
+        </data>
+      </port>
+      <port name="p3">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="0.500000000000001,1" />
+        </data>
+      </port>
+      <port name="p4">
+        <data key="d22">
+          <y:FreeNodePortLocationModelParameter Ratio="1,0.789772727272727" />
+        </data>
+      </port>
+    </node>
+    <edge id="e0" source="n0" target="n1" sourceport="p0" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.Clock.ISystemClock]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.Clock.DefaultSystemClock]]></data>
+      <data key="d17"><![CDATA[Inheritance]]></data>
+    </edge>
+    <edge id="e1" source="n2" target="n3" sourceport="p0" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.ICacheEntry]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.IMemoryCache]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e2" source="n3" target="n4" sourceport="p1" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.CacheEntryPriority]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.ICacheEntry]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="2497.53,1244.97" />
+          <y:Bend Location="2510,1232.5" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e3" source="n3" target="n5" sourceport="p2" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.IChangeToken]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.ICacheEntry]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="4125,1402" />
+          <y:Bend Location="4146.565,1423.565" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e4" source="n3" target="n6" sourceport="p3" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.PostEvictionCallbackRegistration]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.ICacheEntry]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="3797,1428" />
+          <y:Bend Location="3861.41816666667,1492.41816666667" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e5" source="n7" target="n2" sourceport="p0" targetport="p1">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.IMemoryCache]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.InMemoryCacheHandler]]></data>
+      <data key="d17"><![CDATA[Aggregation]]></data>
+      <data key="d18">
+        <x:List>
+          <y:Label PreferredSize="152,23">
+            <y:Label.Text>_responseCache</y:Label.Text>
+            <y:Label.LayoutParameter>
+              <y:EdgeSegmentLabelModelParameter Model="{y:GraphMLReference 1}" SideOfEdge="RightOfEdge" SegmentRatio="0.49999999999999856" />
+            </y:Label.LayoutParameter>
+          </y:Label>
+        </x:List>
+      </data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="1618.13472222222,1403.63472222222" />
+          <y:Bend Location="1628,1413.5" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e6" source="n7" target="n2" sourceport="p1" targetport="p2">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.IMemoryCache]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.InMemoryCacheHandler]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="1590.8075,1438.3075" />
+          <y:Bend Location="1605,1452.5" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e7" source="n7" target="n8" sourceport="p2" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Stats.ICacheStatsProvider]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.InMemoryCacheHandler]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="1045,1098.75" />
+          <y:Bend Location="1021.78333333333,1075.53333333333" />
+          <y:Bend Location="1021.78333333333,730.283333333333" />
+          <y:Bend Location="972,680.5" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e8" source="n7" target="n9" sourceport="p3" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.ICacheKeysProvider]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.InMemoryCacheHandler]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e9" source="n7" target="n10" sourceport="p4" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCache]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.InMemoryCacheHandler]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="1563.48027777778,1567.98027777778" />
+          <y:Bend Location="1583,1587.5" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e10" source="n7" target="n11" sourceport="p5" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheOptions]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.InMemoryCacheHandler]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e11" source="n7" target="n12" sourceport="p6" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Stats.DefaultCacheStatsProvider]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.InMemoryCacheHandler]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="1062,1078.75" />
+          <y:Bend Location="1041.78333333333,1058.53333333333" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e12" source="n7" target="n13" sourceport="p7" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.DefaultCacheKeysProvider]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.InMemoryCacheHandler]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="1243.59777777778,1325.90222222222" />
+          <y:Bend Location="1213,1356.5" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e13" source="n7" target="n14" sourceport="p8" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheExtensions]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.InMemoryCacheHandler]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="1627.2437962963,1252.7437962963" />
+          <y:Bend Location="1637,1262.5" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e14" source="n7" target="n15" sourceport="p9" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Utils.HttpResponseMessageExtensions]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.InMemoryCacheHandler]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="1760,1089.5" />
+          <y:Bend Location="1781.48916666667,1068.01083333333" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e15" source="n7" target="n16" sourceport="p10" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Utils.HttpStatusCodeExtensions]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.InMemoryCacheHandler]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e16" source="n8" target="n17" sourceport="p1" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Stats.CacheStatsReport]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Stats.ICacheStatsProvider]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e17" source="n10" target="n1" sourceport="p1" targetport="p1">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.Clock.ISystemClock]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCache]]></data>
+      <data key="d17"><![CDATA[Aggregation]]></data>
+      <data key="d18">
+        <x:List>
+          <y:Label PreferredSize="57,23">
+            <y:Label.Text>_clock</y:Label.Text>
+            <y:Label.LayoutParameter>
+              <y:EdgeSegmentLabelModelParameter Model="{y:GraphMLReference 1}" SideOfEdge="RightOfEdge" SegmentRatio="0.20588235294117646" />
+            </y:Label.LayoutParameter>
+          </y:Label>
+        </x:List>
+      </data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="1825.59861111111,2440.90138888889" />
+          <y:Bend Location="1761,2505.5" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e18" source="n10" target="n1" sourceport="p2" targetport="p2">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.Clock.ISystemClock]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCache]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="1876.19805555556,2480.30194444444" />
+          <y:Bend Location="1812,2544.5" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e19" source="n10" target="n18" sourceport="p3" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheEntry]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCache]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e20" source="n10" target="n11" sourceport="p4" targetport="p1">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheOptions]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCache]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="1724.39972222222,1711.60027777778" />
+          <y:Bend Location="1711,1725" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e21" source="n10" target="n0" sourceport="p5" targetport="p1">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.Clock.DefaultSystemClock]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCache]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="1774.99916666667,2299.50083333333" />
+          <y:Bend Location="1721,2353.5" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e22" source="n10" target="n3" sourceport="p6" targetport="p4">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.ICacheEntry]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCache]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="2269,1587.5" />
+          <y:Bend Location="2285.53694444444,1570.96305555556" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e23" source="n10" target="n19" sourceport="p7" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.EvictionReason]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCache]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e24" source="n10" target="n2" sourceport="p8" targetport="p3">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.IMemoryCache]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCache]]></data>
+      <data key="d17"><![CDATA[Inheritance]]></data>
+    </edge>
+    <edge id="e25" source="n11" target="n1" sourceport="p2" targetport="p3">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.Clock.ISystemClock]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheOptions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e26" source="n11" target="n0" sourceport="p3" targetport="p2">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.Clock.DefaultSystemClock]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheOptions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e27" source="n12" target="n20" sourceport="p1" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Stats.CacheStatsResult]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Stats.DefaultCacheStatsProvider]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e28" source="n12" target="n17" sourceport="p2" targetport="p1">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Stats.CacheStatsReport]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Stats.DefaultCacheStatsProvider]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e29" source="n12" target="n8" sourceport="p3" targetport="p2">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Stats.ICacheStatsProvider]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Stats.DefaultCacheStatsProvider]]></data>
+      <data key="d17"><![CDATA[Inheritance]]></data>
+    </edge>
+    <edge id="e30" source="n13" target="n9" sourceport="p1" targetport="p1">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.ICacheKeysProvider]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.DefaultCacheKeysProvider]]></data>
+      <data key="d17"><![CDATA[Inheritance]]></data>
+    </edge>
+    <edge id="e31" source="n14" target="n2" sourceport="p1" targetport="p4">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.IMemoryCache]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheExtensions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e32" source="n14" target="n21" sourceport="p2" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.CacheData]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheExtensions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e33" source="n14" target="n22" sourceport="p3" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.CacheDataExtensions]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheExtensions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="2103.23666666667,507.263333333333" />
+          <y:Bend Location="2168,442.5" />
+          <y:Bend Location="2513,442.5" />
+          <y:Bend Location="2543.39833333333,412.101666666667" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e34" source="n14" target="n3" sourceport="p4" targetport="p5">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.ICacheEntry]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheExtensions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="2099.29333333333,1395.51555555556" />
+          <y:Bend Location="2115,1411.22222222222" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e35" source="n14" target="n4" sourceport="p5" targetport="p1">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.CacheEntryPriority]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheExtensions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="2138.83666666667,1177.91333333333" />
+          <y:Bend Location="2145,1171.75" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e36" source="n15" target="n21" sourceport="p1" targetport="p1">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.CacheData]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Utils.HttpResponseMessageExtensions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e37" source="n18" target="n18" sourceport="p1" targetport="p2">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheEntry]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheEntry]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="2419.60658564815,1648.10658564815" />
+          <y:Bend Location="2424,1652.5" />
+          <y:Bend Location="2614,1652.5" />
+          <y:Bend Location="2620.73333333333,1645.76666666667" />
+          <y:Bend Location="2620.73333333333,1609.13333333333" />
+          <y:Bend Location="2617,1605.4" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e38" source="n18" target="n5" sourceport="p3" targetport="p1">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.IChangeToken]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheEntry]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e39" source="n18" target="n6" sourceport="p4" targetport="p1">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.PostEvictionCallbackRegistration]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheEntry]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="3557,1579.1" />
+          <y:Bend Location="3621.27990740741,1643.37990740741" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e40" source="n18" target="n4" sourceport="p5" targetport="p2">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.CacheEntryPriority]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheEntry]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="2642,1557" />
+          <y:Bend Location="2650.25,1548.75" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e41" source="n18" target="n19" sourceport="p6" targetport="p1">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.EvictionReason]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheEntry]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e42" source="n18" target="n23" sourceport="p7" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.PostEvictionDelegate]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheEntry]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="3705,1601.2" />
+          <y:Bend Location="3769.11805555556,1665.31805555556" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e43" source="n18" target="n3" sourceport="p8" targetport="p6">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.ICacheEntry]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheEntry]]></data>
+      <data key="d17"><![CDATA[Inheritance]]></data>
+    </edge>
+    <edge id="e44" source="n6" target="n6" sourceport="p2" targetport="p3">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.PostEvictionCallbackRegistration]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.PostEvictionCallbackRegistration]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="3957.4325,2182.4325" />
+          <y:Bend Location="3961,2186" />
+          <y:Bend Location="4024,2186" />
+          <y:Bend Location="4034.86833333333,2175.13166666667" />
+          <y:Bend Location="4034.86833333333,2115.86833333333" />
+          <y:Bend Location="4031,2112" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e45" source="n24" target="n3" sourceport="p0" targetport="p7">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.ICacheEntry]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheEntryExtensions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="2567,921.5" />
+          <y:Bend Location="2527.15333333333,961.346666666666" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e46" source="n24" target="n25" sourceport="p1" targetport="p0">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheEntryOptions]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheEntryExtensions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e47" source="n24" target="n6" sourceport="p2" targetport="p4">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.PostEvictionCallbackRegistration]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheEntryExtensions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="3889,905" />
+          <y:Bend Location="3953.71827777778,969.718277777778" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e48" source="n25" target="n4" sourceport="p1" targetport="p3">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.CacheEntryPriority]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheEntryOptions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e49" source="n25" target="n5" sourceport="p2" targetport="p2">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.IChangeToken]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheEntryOptions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="4243,1194" />
+          <y:Bend Location="4296.23166666667,1247.23166666667" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e50" source="n25" target="n6" sourceport="p3" targetport="p5">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.PostEvictionCallbackRegistration]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.InMemory.MemoryCacheEntryOptions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e51" source="n22" target="n21" sourceport="p1" targetport="p2">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.CacheData]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.CacheDataExtensions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e52" source="n17" target="n20" sourceport="p2" targetport="p1">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Stats.CacheStatsResult]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.Stats.CacheStatsReport]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+    <edge id="e53" source="n26" target="n3" sourceport="p0" targetport="p8">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.ICacheEntry]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.CacheEntryExtensions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="2859.31458333333,1839.31458333333" />
+          <y:Bend Location="2829,1809" />
+          <y:Bend Location="2448,1809" />
+          <y:Bend Location="2397.47476851852,1758.47476851852" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e54" source="n26" target="n4" sourceport="p1" targetport="p4">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.CacheEntryPriority]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.CacheEntryExtensions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="2895.65375,1688.25375" />
+          <y:Bend Location="2870,1662.6" />
+          <y:Bend Location="2745,1662.6" />
+          <y:Bend Location="2719.33208333333,1636.93208333333" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e55" source="n26" target="n5" sourceport="p2" targetport="p3">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.IChangeToken]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.CacheEntryExtensions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="3131.65236111111,1661.44763888889" />
+          <y:Bend Location="3194,1599.1" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e56" source="n26" target="n23" sourceport="p3" targetport="p1">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.PostEvictionDelegate]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.CacheEntryExtensions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+      <data key="d19">
+        <x:List>
+          <y:Bend Location="3045.39833333333,2354.39833333333" />
+          <y:Bend Location="3089,2398" />
+        </x:List>
+      </data>
+    </edge>
+    <edge id="e57" source="n26" target="n6" sourceport="p4" targetport="p6">
+      <data key="d15"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.PostEvictionCallbackRegistration]]></data>
+      <data key="d16"><![CDATA[078f780b-17aa-4e58-a8d3-397033bad23a%28HttpClient.Cache%29-B650FB2%5Bnet6.0%5D/T%3AHttpClient.Cache.CacheEntryExtensions]]></data>
+      <data key="d17"><![CDATA[Usages]]></data>
+    </edge>
+  </graph>
+</graphml>
