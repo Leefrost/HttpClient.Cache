@@ -32,7 +32,7 @@ public static class CacheEntryExtensions
         return entry;
     }
     
-    public static ICacheEntry AddExpirationToken(this ICacheEntry entry, IChangeToken token)
+    public static ICacheEntry AddExpirationToken(this ICacheEntry entry, IChangeToken? token)
     {
         if (token == null)
         {
@@ -43,8 +43,8 @@ public static class CacheEntryExtensions
         return entry;
     }
 
-    public static ICacheEntry RegisterPostEvictionCallback(this ICacheEntry entry, PostEvictionDelegate callback,
-        object state)
+    public static ICacheEntry RegisterPostEvictionCallback(this ICacheEntry entry, PostEvictionDelegate? callback,
+        object? state)
     {
         if (callback == null)
         {

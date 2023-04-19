@@ -3,11 +3,11 @@ using System.Text;
 
 namespace HttpClient.Cache.Tests;
 
-public class TestHandler : HttpMessageHandler
+internal class TestHttpMessageHandler : HttpMessageHandler
 {
-    internal const HttpStatusCode DefaultCode = HttpStatusCode.OK;
-    internal const string DefaultContent = "The response content";
-    internal const string DefaultContentType = "text/plain";
+    private const HttpStatusCode DefaultCode = HttpStatusCode.OK;
+    private const string DefaultContent = "The response content";
+    private const string DefaultContentType = "text/plain";
     
     private readonly string _content;
     private readonly string _contentType;
@@ -16,7 +16,7 @@ public class TestHandler : HttpMessageHandler
 
     private readonly HttpStatusCode _responseCode;
 
-    public TestHandler(
+    public TestHttpMessageHandler(
         HttpStatusCode responseCode = DefaultCode,
         string content = DefaultContent,
         string contentType = DefaultContentType,
