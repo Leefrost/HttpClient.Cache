@@ -2,13 +2,13 @@
 
 namespace HttpClient.Cache.InMemory;
 
-internal class CacheEntry : ICacheEntry
+internal class MemoryCacheEntry : ICacheEntry
 {
     private readonly object _lock = new();
     private static readonly Action<object> ExpirationCallback = ExpirationTokensExpired;
 
-    private readonly Action<CacheEntry> _notifyCacheEntryDisposed;
-    private readonly Action<CacheEntry> _notifyCacheOfExpiration;
+    private readonly Action<MemoryCacheEntry> _notifyCacheEntryDisposed;
+    private readonly Action<MemoryCacheEntry> _notifyCacheOfExpiration;
     private DateTimeOffset? _absoluteExpiration;
     private TimeSpan? _absoluteExpirationRelativeToNow;
     private TimeSpan? _slidingExpiration;
@@ -20,10 +20,10 @@ internal class CacheEntry : ICacheEntry
     private bool _isDisposed;
     private bool _isExpired;
 
-    internal CacheEntry(
+    internal MemoryCacheEntry(
         object key, 
-        Action<CacheEntry> notifyCacheEntryDisposed,
-        Action<CacheEntry> notifyCacheOfExpiration)
+        Action<MemoryCacheEntry> notifyCacheEntryDisposed,
+        Action<MemoryCacheEntry> notifyCacheOfExpiration)
     {
         Key = key ?? throw new ArgumentNullException(nameof(key));
 
@@ -82,9 +82,14 @@ internal class CacheEntry : ICacheEntry
         }
     }
 
-    public IList<PostEvictionCallbackRegistration> PostEvictionCallbacks => 
-        _postEvictionCallbacks ?? new List<PostEvictionCallbackRegistration>();
-    
+    public IList<PostEvictionCallbackRegistration> PostEvictionCallbacks
+    {
+        get
+        {
+            return _postEvictionCallbacks ??= new List<PostEvictionCallbackRegistration>();
+        }
+    }
+
     internal DateTimeOffset LastAccessed { get; set; }
     
     internal EvictionReason EvictionReason { get; private set; }
@@ -158,7 +163,7 @@ internal class CacheEntry : ICacheEntry
     {
         Task.Factory.StartNew(state =>
         {
-            CacheEntry? cacheEntry = state as CacheEntry;
+            MemoryCacheEntry? cacheEntry = state as MemoryCacheEntry;
             cacheEntry?.ExpireEntryByReason(EvictionReason.TokenExpired);
             cacheEntry?._notifyCacheOfExpiration(cacheEntry);
         }, entry, CancellationToken.None, TaskCreationOptions.DenyChildAttach, TaskScheduler.Default);
@@ -222,11 +227,11 @@ internal class CacheEntry : ICacheEntry
             return;
         }
 
-        Task.Factory.StartNew(state => InvokeCallbacks((CacheEntry)state!), this, CancellationToken.None,
+        Task.Factory.StartNew(state => InvokeCallbacks((MemoryCacheEntry)state!), this, CancellationToken.None,
             TaskCreationOptions.DenyChildAttach, TaskScheduler.Default);
     }
 
-    private static void InvokeCallbacks(CacheEntry entry)
+    private static void InvokeCallbacks(MemoryCacheEntry entry)
     {
         var evictionCallbacks =
             Interlocked.Exchange(ref entry._postEvictionCallbacks, null);
