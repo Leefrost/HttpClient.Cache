@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" width="100%">
     <img src="/.github/icon.png" alt="Icon" align="center">
 </div>
 <big>
