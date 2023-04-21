@@ -1,6 +1,17 @@
-## HttpClient.Cache
-
-A lightweight in-memory cache for HttpClient.
+<div align="center">
+    <img src="/.github/icon.png" alt="Icon" align="center">
+</div>
+<big>
+  <h1 align="center">HttpClient.Cache</h1>
+</big>
+<p align="center">
+  A lightweight in-memory cache for HttpClient
+</p>
+<p align="center">
+<a href="">
+  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="version">
+</a>
+</p>
 
 ### The Purpose
 
